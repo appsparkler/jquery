@@ -6,5 +6,10 @@ pipeline {
         echo 'Hey jQuery is cloned.  Yay!!!'
       }
     }
+    stage('Install Node Modules') {
+      steps {
+        sh 'npm install'
+      }
+    }
   }
 }
