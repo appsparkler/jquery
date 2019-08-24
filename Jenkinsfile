@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Install Node Modules') {
       steps {
-        sh 'npm install'
+        powershell 'npm install'
       }
     }
   }
